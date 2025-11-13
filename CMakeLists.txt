@@ -96,7 +96,9 @@ if (BUILD_PROGRAM_TESTS)
             Boost::json
             Boost::charconv
             laserpants::dotenv
-            ${OPENSSL_SSL_LIBRARY} ${OPENSSL_CRYPTO_LIBRARY})
+            ${OPENSSL_SSL_LIBRARY} ${OPENSSL_CRYPTO_LIBRARY}
+            bcrypt
+    )
 
     include(GoogleTest)
     gtest_discover_tests(tests)
@@ -108,7 +110,9 @@ target_link_libraries(base PUBLIC framework
         Boost::json
         Boost::charconv
         laserpants::dotenv
-        ${OPENSSL_SSL_LIBRARY} ${OPENSSL_CRYPTO_LIBRARY})
+        ${OPENSSL_SSL_LIBRARY} ${OPENSSL_CRYPTO_LIBRARY}
+        bcrypt
+)
 
 if (ENABLE_STATIC_LINKING)
     target_compile_options(base PRIVATE -static -static-libgcc -static-libstdc++)
