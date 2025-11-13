@@ -85,7 +85,7 @@ if (BUILD_PROGRAM_TESTS)
     enable_testing()
     file(GLOB_RECURSE TESTS CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/tests/*.cc")
 
-    add_executable(tests ${TESTS})
+    add_executable(tests ${TESTS} ${SOURCES})
     if(ENABLE_STATIC_LINKING)
         target_compile_options(tests PRIVATE -static -static-libgcc -static-libstdc++)
         target_link_options(tests PRIVATE -static -static-libgcc -static-libstdc++)
