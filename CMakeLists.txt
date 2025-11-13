@@ -71,7 +71,7 @@ find_package(laserpants_dotenv REQUIRED)
 
 find_package(framework)
 include_directories(src/include)
-file(GLOB_RECURSE SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/objects/*.cpp")
+file(GLOB_RECURSE SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/objects/*.cxx")
 
 if (BUILD_PROGRAM_TESTS)
     FetchContent_Declare(
