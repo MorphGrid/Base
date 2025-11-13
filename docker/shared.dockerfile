@@ -15,4 +15,4 @@ COPY . .
 RUN bash scripts/build.sh ${BOOST_VARIANT} ${LINK}
 
 EXPOSE 9000
-ENTRYPOINT ["/srv/build/server"]
+ENTRYPOINT ["/srv/build/base"]
