@@ -23,7 +23,7 @@ namespace about {
 namespace program {
 inline std::string name = "Base";
 inline std::string version = "1.0.0";
-    std::string get_version();
+std::string get_version();
 }  // namespace program
 
 namespace operations {
