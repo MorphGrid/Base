@@ -10,16 +10,16 @@
 using namespace framework;
 
 namespace about {
-    namespace program {
-        inline std::string name = "Base";
-        inline std::string version = "1.0.0";
-    }
+namespace program {
+inline std::string name = "Base";
+inline std::string version = "1.0.0";
+}  // namespace program
 
-    namespace operations {
-        inline vector_of<std::string> operations = {
-            "about",
-        };
-    }
+namespace operations {
+inline vector_of<std::string> operations = {
+    "about",
+};
 }
+}  // namespace about
 
-#endif //ABOUT_HPP
+#endif  // ABOUT_HPP
