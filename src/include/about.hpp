@@ -22,7 +22,7 @@ using namespace framework;
 namespace about {
 namespace program {
 inline const std::string name = "Base";
-inline const std::string version = "1.0.0";
+inline const std::string version = "1.0.1";
 std::string get_version();
 }  // namespace program
 
