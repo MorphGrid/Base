@@ -14,7 +14,7 @@ COPY . .
 
 RUN bash scripts/build.sh ${BOOST_VARIANT} ${LINK}
 
-FROM alpine:latest AS runtime
+FROM alpine:3.22.2 AS runtime
 WORKDIR /srv
 COPY --from=builder /srv/build/base /usr/local/bin/base
 
