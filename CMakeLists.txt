@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(BUILD_TESTS "Build framework tests cases" OFF)
 option(BUILD_PROGRAM_TESTS "Build program tests cases" ON)
 option(ENABLE_DEBUG "Enable debugging" ON)
-option(ENABLE_STATIC_LINKING "Enable static linking feature" OFF)
+option(ENABLE_STATIC_LINKING "Enable static linking feature" ON)
 option(ENABLE_NATIVE_OPTIMIZATION "Enable native CPU optimization feature" OFF)
 option(ENABLE_CI "Enable CI settings" OFF)
 
