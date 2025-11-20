@@ -16,7 +16,7 @@ jobs:
         link: [shared, static]
 
     container:
-      image: ghcr.io/morphgrid/framework:1.0.0-boost-${{ matrix.version }}-${{ matrix.type }}-${{ matrix.link }}
+      image: ghcr.io/morphgrid/framework:1.0.2-boost-${{ matrix.version }}-${{ matrix.type }}-${{ matrix.link }}
 
     steps:
       - uses: actions/checkout@v4

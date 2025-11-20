@@ -17,5 +17,5 @@
 #include <about.hpp>
 
 TEST(test_about, contains_program_name) { ASSERT_EQ(about::program::name, "Base"); }
-TEST(test_about, contains_program_version) { ASSERT_EQ(about::program::version, "1.0.1"); }
-TEST(test_about, contains_program_version_as_method) { ASSERT_EQ(about::program::get_version(), "1.0.1"); }
+TEST(test_about, contains_program_version) { ASSERT_EQ(about::program::version, "1.0.2"); }
+TEST(test_about, contains_program_version_as_method) { ASSERT_EQ(about::program::get_version(), "1.0.2"); }
